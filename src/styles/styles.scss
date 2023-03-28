@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import './_mediaQueries.scss';
+@import './_generalStyles.scss';
+
+// COMPONENTS
+
+@import '../components/Carousel/_carousel.scss';
+@import '../components/LoginForm/_loginForm.scss';
+@import '../components/RetrievePassword/_retrievePassword.scss';
+@import '../components/TopNavigation/_topNavigation.scss';
+@import '../components/TabBar/_tabBar.scss';
+@import '../components/HomeLinks/_homeLinks.scss';
+@import '../components/HomeRecomendations/_homeRecomendations.scss';
+@import '../components/Opinions/_opinions.scss';
+@import '../components/CheckoutModals/_checkoutModals.scss';
+@import '../components/HomeLibrary/_homeLibrary.scss';
+@import '../components/TeamModal/_teamModal.scss';
+
+// VIEWS
+
+@import '../views/Welcome/_welcome.scss';
+@import '../views/Onboarding/_onboarding.scss';
+@import '../views/Login/_login.scss';
+@import '../views/Profile/_profile.scss';
+@import '../views/Library/_library.scss';
+@import '../views/Home/_home.scss';
+@import '../views/Categories/_categories.scss';
+@import '../views/Category/_category.scss';
+@import '../views/Book/_book.scss';

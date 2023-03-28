@@ -1,0 +1,112 @@
+.libraryContainer {
+    nav {
+        margin-top: 0.8rem;
+        ul {
+            gap: 4rem;
+            li {
+                color: #9f9f9f;
+                font-size: 0.85rem;
+                font-weight: 500;
+                line-height: 1.2rem;
+                letter-spacing: 0.1px;
+            }
+            .library-active {
+                color: $pink;
+                position: relative;
+                .underlineFigure {
+                    position: absolute;
+                    top: 1.9rem;
+                    width: 90%;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    height: 3px;
+                    background: $pink;
+                    border-radius: 100px 100px 0px 0px;
+                }
+            }
+        }
+    }
+    .librarySection {
+        padding: 0 0.8rem 80px 0.8rem;
+        margin-top: 2rem;
+        .filterBooks,
+        .viewSettings {
+            color: #79747e;
+            gap: 0.3rem;
+            p {
+                font-size: 0.6rem;
+            }
+            img {
+                width: 11px;
+            }
+            svg {
+                width: 15px;
+            }
+        }
+        .libraryBook {
+            margin-top: 0.5rem;
+            .bookImg {
+                margin-right: 0.5rem;
+                img {
+                    width: 90px;
+                }
+            }
+            .bookInfo {
+                margin-bottom: 0.6rem;
+                h2 {
+                    font-weight: 500;
+                    font-size: 0.95rem;
+                }
+                .bookAuthor {
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    margin-top: 0.7rem;
+                }
+                .category {
+                    font-weight: 300;
+                    font-size: 0.75rem;
+                    text-transform: capitalize;
+                    margin-top: 0.6rem;
+                }
+                .pages {
+                    font-weight: 300;
+                    font-size: 0.75rem;
+                    margin-top: 0.4rem;
+                }
+            }
+            .bookActions {
+                gap: 0.1rem;
+                svg {
+                    color: #9f9f9f;
+                    width: 18px;
+                }
+            }
+        }
+        .libraryEmpty {
+            margin-top: 12%;
+            gap: 1.5rem;
+            h3 {
+                margin-top: 1.5rem;
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+            p {
+                max-width: 350px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                @include max-screen(368) {
+                    max-width: 94%;
+                }
+            }
+            button {
+                @include button(50%, 53px);
+                min-width: 230px;
+                margin-top: 0.8rem;
+            }
+        }
+    }
+}

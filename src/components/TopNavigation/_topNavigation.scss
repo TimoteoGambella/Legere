@@ -1,0 +1,36 @@
+.topNavigation {
+    padding: 0.6rem 0;
+    position: relative;
+    h3 {
+        font-size: 1.5rem;
+        color: #000000;
+        font-weight: 500;
+        text-align: center;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    .arrowIcon {
+        position: absolute;
+        left: 0.9rem;
+    }
+    .bookmarkIcon {
+        position: absolute;
+        right: 2.4rem;
+        color: #9f9f9f;
+    }
+    .menuIcon {
+        position: absolute;
+        right: 0.9rem;
+        color: #808080;
+    }
+    .searchIcon {
+        position: absolute;
+        right: 0.9rem;
+        color: #9f9f9f;
+    }
+}
+
+.padding {
+    height: 48.8px;
+}

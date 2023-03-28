@@ -1,0 +1,17 @@
+@mixin screen_601 {
+    @media (max-width: 601px) {
+      @content;
+    }
+}
+
+@mixin screen($size) {
+  @media (min-width: ($size + "px")) {
+    @content;
+  }
+}
+
+@mixin max-screen($size) {
+  @media (max-width: ($size + "px")) {
+    @content;
+  }
+}

@@ -1,0 +1,26 @@
+.onboardingContainer {
+    text-align: center;
+    height: 100%;
+    gap: 0.8rem;
+    justify-content: center;
+    height: 100vh;
+    .onBoardingButtons {
+        height: 124px;
+        justify-content: flex-start;
+        .onboarding-next {
+            cursor: pointer;
+            @include button(90%, 64px);
+            margin-bottom: 0.3rem;
+        }
+        .onboarding-skip {
+            p {
+                color: $pink;
+                font-weight: 500;
+                padding: 0.8rem;
+            }
+        }
+        .onboarding-redirect {
+            @include button(90%, 64px);
+        }
+    }
+}

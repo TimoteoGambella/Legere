@@ -1,0 +1,40 @@
+.tabBar {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    background-color: #ffffff;
+    max-width: 600px;
+    ul {
+        gap: 3rem;
+        @include max-screen(370){
+            gap: 2rem;
+        }
+        li {
+            p {
+                font-size: 0.75rem;
+                font-weight: 500;
+                line-height: 1rem;
+                letter-spacing: 0.5px;
+                color: #404040;
+            }
+            a {
+                gap: 0.4rem;
+                align-items: center;
+                color: #404040;
+            }
+            svg {
+                font-size: 1.3rem;
+            }
+            .activeTab {
+                color: $pink;
+                p {
+                    color: $pink;
+                }
+            }
+        }
+    }
+}

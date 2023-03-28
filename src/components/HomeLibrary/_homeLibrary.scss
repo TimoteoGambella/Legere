@@ -1,0 +1,39 @@
+.homeLibraryContainer {
+    flex-wrap: wrap;
+    @include max-screen(554) {
+        a:last-child {
+            display: none;
+        }
+    }
+    @include max-screen(369) {
+        a:nth-child(2) {
+            display: none;
+        }
+    }
+    .homeLibraryBook {
+        img {
+            width: 170px;
+        }
+        .bookInfo {
+            margin-left: 5px;
+            h2 {
+                font-weight: 600;
+                font-size: 0.7rem;
+            }
+            p {
+                font-weight: 300;
+                font-size: 0.65rem;
+            }
+            .miscellaneous {
+                gap: 0.05rem;
+                .star {
+                    width: 7px;
+                }
+                svg {
+                    width: 10px;
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+}

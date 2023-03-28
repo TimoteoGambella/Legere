@@ -1,0 +1,140 @@
+.loginForm {
+    width: 92%;
+    gap: 1.4rem;
+    position: absolute;
+    z-index: 5;
+    top: 70%;
+    .form-input {
+        width: 100%;
+        label {
+            align-self: flex-start;
+            position: relative;
+            left: 14px;
+            top: 7px;
+            background-color: #ffffff;
+            padding: 0 5px;
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        input {
+            width: 100%;
+            height: 49px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            font-size: 1rem;
+            padding-left: 18px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .formErrorBorder {
+            border: 2px solid #f10f0f;
+        }
+        .formErrorText {
+            color: #f10f0f;
+        }
+        .formErrorIcon {
+            position: relative;
+            color: #f10f0f;
+            svg {
+                position: absolute;
+                bottom: 13px;
+                right: 3%;
+            }
+        }
+        .formErrorMessage {
+            position: relative;
+            small {
+                color: #f10f0f;
+                font-size: 0.75rem;
+                letter-spacing: 0.4px;
+                position: absolute;
+                top: 0.3rem;
+                text-align: start;
+                padding-left: 0.3rem;
+            }
+        }
+    }
+    button {
+        @include button(100%, 64px);
+        cursor: pointer;
+    }
+    .checkboxLogin {
+        gap: 0.2rem;
+        input[type='checkbox'] {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+            cursor: pointer;
+            font: inherit;
+            background-color: #ff5678;
+            width: 16px;
+            height: 16px;
+            border-radius: 5px;
+            transform: translateY(-0.075em);
+            display: grid;
+            place-content: center;
+        }
+        input[type='checkbox']::before {
+            content: '';
+            width: 0.65em;
+            height: 0.65em;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+            transform: scale(0);
+            transform-origin: bottom left;
+            transition: 50ms transform ease-in-out;
+            background-color: white;
+        }
+        input[type='checkbox']:checked::before {
+            transform: scale(1);
+        }
+        p {
+            color: #797a7c;
+            font-size: 0.75rem;
+            font-weight: 500;
+            .colored {
+                color: $pink;
+                margin: 0 0.2rem;
+            }
+        }
+        .checkboxLegals {
+            @include max-screen(400) {
+                font-size: 0.6rem;
+            }
+            @include max-screen(329) {
+                font-size: 0.5rem;
+            }
+        }
+    }
+    .requestPassword {
+        p {
+            cursor: pointer;
+            color: $pink;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    }
+    .createAccount {
+        gap: 0.3rem;
+        p {
+            font-size: 0.9rem;
+            letter-spacing: -0.02em;
+            font-weight: 500;
+        }
+        p:last-child {
+            color: $pink;
+            cursor: pointer;
+        }
+    }
+    .skipLogin {
+        color: $pink;
+        font-size: 0.9rem;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+.registerForm{
+    margin-top: 2.5rem;
+}
+

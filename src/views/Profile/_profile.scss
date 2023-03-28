@@ -1,0 +1,63 @@
+.profileContainer {
+    padding-bottom: 10%;
+    height: 90vh;
+    .profileData {
+        img {
+            margin: 1rem 0;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1rem;
+            margin-bottom: 0.2rem;
+        }
+        p {
+            font-weight: 300;
+            font-size: 14px;
+            color: #79747e;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .dividerLine {
+        border: 1px solid #616161;
+        opacity: 70%;
+        width: 92%;
+        margin: auto;
+    }
+    .listFunctions {
+        gap: 0.5rem;
+        margin: 1.7rem 0;
+        li {
+            justify-content: flex-start;
+            margin-left: 4%;
+            gap: 0.6rem;
+            position: relative;
+            .icon-profile {
+                color: #000000;
+                opacity: 54%;
+            }
+            p {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 2rem;
+                color: #616161;
+            }
+            .arrow-profile {
+                position: absolute;
+                right: 1.5rem;
+                font-size: 0.9rem;
+                color: #616161;
+                opacity: 60%;
+            }
+        }
+        .signOut {
+            p {
+                color: #000000;
+            }
+            cursor: pointer;
+            .arrow-profile {
+                opacity: 100%;
+            }
+        }
+    }
+}

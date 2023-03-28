@@ -1,0 +1,44 @@
+.bookOpinions {
+    .opinionsTitle {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .opinionContainer {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        h3 {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #404040;
+        }
+        .opinionStars {
+            img {
+                width: 16px;
+            }
+            .greyStar {
+                path {
+                    fill: #d9d9d9;
+                    stroke: #d9d9d9;
+                }
+            }
+            .yellowStar {
+                path {
+                    fill: $pink;
+                    stroke: $pink;
+                }
+            }
+        }
+    }
+    .opinionText {
+        margin-left: 1rem;
+        width: 220px;
+        p {
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+            color: #79747e;
+        }
+    }
+}

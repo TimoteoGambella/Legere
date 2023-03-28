@@ -1,0 +1,45 @@
+.homeRecommendations {
+    gap: 0.6rem;
+    .recommendationsBook {
+        position: relative;
+        justify-content: flex-start;
+        gap: 0.7rem;
+        img {
+            height: 80px;
+        }
+        .bookInfo {
+            height: 80px;
+            justify-content: space-around;
+            gap: 0.1rem;
+            h2 {
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+            p {
+                font-weight: 300;
+                font-size: 0.63rem;
+            }
+            .rating {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.15rem;
+                img {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+        .price {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            span {
+                font-weight: 500;
+                font-size: 1.25rem;
+                letter-spacing: -0.02em;
+                color: $pink;
+            }
+        }
+    }
+}
